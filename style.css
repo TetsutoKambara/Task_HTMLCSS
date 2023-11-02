@@ -36,7 +36,6 @@ nav {
 }
 .navList {
   text-align: center;
-  padding: 10px 0;
   margin: 0 auto;
 }
 .navListItem {
@@ -101,7 +100,7 @@ footer {
   width: 100%;
   height: 100px;
   background-color: darkgreen;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 .footerText {
