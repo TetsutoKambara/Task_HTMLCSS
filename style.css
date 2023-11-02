@@ -1,0 +1,119 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+/* 複数領域への設定 */
+/* フォント指定　*/
+header, main, footer {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+
+/* headerグループ */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+}
+.heading {
+  text-align: center;
+  padding-top: 10px;  /* 見出しの上部に10pxの余白を設定。 */
+}
+.headingAnchor {
+  text-decoration: none;
+  color: #fff; /* ヘッダ領域の文字色は#fffを設定。 */
+}
+nav {
+  margin: 10px 0px 10px 0px; /* ナビゲーション領域の上下に10pxの余白を設定。 */
+}
+.navList {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.navListItem {
+  list-style: none;
+  display: inline-block; /* ナビゲーション項目は横並びで設定。 */
+  margin: 0 20px; /* ナビゲーション項目はそれぞれ左右に20pxの余白を設定。 */
+  color: #fff;
+}
+.navListItemAnchor {
+  text-decoration: none;
+  color:#38b48b;
+}
+
+/* mainグループ */
+main {
+  background-color: #ecfcdf;
+  padding: 10px 40px 40px 40px;
+}
+.mainHeading {
+  text-align: center;
+  margin: 0px 0px 10px 0px; /* memo margin 上右下左 */
+}
+.profile {
+  display: flex;
+  justify-content: center;
+}
+.profileImage {
+  width: 30%; /* 横幅を30%とし */
+  height: auto;
+  margin-right: 10px; /* 右側外部余白を10pxとする */
+}
+.profileImageImg {
+  width: 100%;  /* 横幅を100% */
+  border-radius: 10px;  /* 角を10px丸くする。 */
+}
+.profileText {
+  width: 70%; /* 横幅：70% */
+  background-color: #fff; /* 背景色：#fff */
+  border-radius: 10px;  /* 角を10px丸くする。 */
+  padding: 10px;  /* 左右内部余白：10px */
+}
+.profileTextBox {
+  line-height: 40px;  /* 自己紹介文の１行の高さは40pxとする。 */
+  display: flex;
+}
+.profileTextBoxProperty {
+  width: 100px; /* 横幅100px */
+  font-weight: bold;  /* 文字の太さはbold */
+}
+.social {
+  position: relative;
+  left: 100px;
+}
+.social i {
+  margin-right: 20px; /* 右に20pxの外部余白を設定する。 */
+  margin-bottom: 20px;  /* 下に20pxの外部余白を設定する。 */
+}
+
+/* footerグループ */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: darkgreen;
+}
+.footerText {
+  color: #fff;  /* 文字色を#fff */
+  text-align: center; /* 文字を左右中央寄せ */
+  line-height: 100px; /* 文字を上下中央寄せ */
+}
+
+/* 横幅768px以下の場合 */
+@media screen and (max-width: 768px) {
+.profile {
+  display: block; /* 画像領域と自己紹介文領域の横並びを解除。 */
+}
+.profileImage {
+  width: 100%;  /* 画像領域の横幅は100%を設定。 */
+}
+.profileText {
+  width: 100%;  /* 自己紹介文領域の横幅は100%を設定。 */
+}
+}
+
+
+
